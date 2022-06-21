@@ -11,7 +11,7 @@ namespace ModeLSS
         private OnlineShopDBCounttext counttext = null;
        public AccountModel()
         {
-            counttext = new OnlineShopDBCounttext();
+            counttext = new OnlineShopDBCounttext();    
         }
         //public bool Login(string userName,string password)
         //{
