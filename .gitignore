@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/donghothoitrangOnline1/config/applicationhost.config
+/.vs/donghothoitrangOnline1/v16/.suo
+/ModeLSS/obj/Debug/ModeLSS.csproj.CopyComplete
+/ModeLSS/bin/Debug
