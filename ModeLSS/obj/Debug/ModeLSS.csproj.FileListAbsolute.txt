@@ -1,6 +1,0 @@
-D:\ASp_Net\donghothoitrangOnline1\ModeLSS\bin\Debug\ModeLSS.dll
-D:\ASp_Net\donghothoitrangOnline1\ModeLSS\bin\Debug\ModeLSS.pdb
-D:\ASp_Net\donghothoitrangOnline1\ModeLSS\obj\Debug\ModeLSS.csprojAssemblyReference.cache
-D:\ASp_Net\donghothoitrangOnline1\ModeLSS\obj\Debug\ModeLSS.csproj.CoreCompileInputs.cache
-D:\ASp_Net\donghothoitrangOnline1\ModeLSS\obj\Debug\ModeLSS.dll
-D:\ASp_Net\donghothoitrangOnline1\ModeLSS\obj\Debug\ModeLSS.pdb
