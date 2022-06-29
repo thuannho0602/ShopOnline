@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "7BL04R7l4qyE8uHmdgMctzYdwzj4GzbwnsB7//Gtnwz3iMEDcFJ2EPYp423BnXX1f7UkWJO1ZtgkD3KYXLb2jA==",
+  "success": true,
+  "projectFilePath": "D:\\ASp_Net\\ShopOnline\\ShopONLINEDongHo\\Models\\Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

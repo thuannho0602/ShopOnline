@@ -9,9 +9,12 @@ namespace ShopONLINEDongHo.Controllers
     public class LoginController : Controller
     {
         // GET: Login
+        [HttpGet]
         public ActionResult Index()
         {
             return View();
         }
+        [HttpPost]
+
     }
 }

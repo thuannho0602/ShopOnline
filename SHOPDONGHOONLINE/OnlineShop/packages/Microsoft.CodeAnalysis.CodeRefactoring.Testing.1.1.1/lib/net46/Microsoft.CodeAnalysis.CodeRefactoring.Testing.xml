@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.CodeAnalysis.CodeRefactoring.Testing</name>
+    </assembly>
+    <members>
+        <member name="P:Microsoft.CodeAnalysis.Testing.CodeRefactoringTest`1.FixedCode">
+            <summary>
+            Sets the expected output source file for code refactoring testing.
+            </summary>
+            <seealso cref="P:Microsoft.CodeAnalysis.Testing.CodeRefactoringTest`1.FixedState"/>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Testing.CodeRefactoringTest`1.GetCodeRefactoringProviders">
+            <summary>
+            Returns the code refactorings being tested - to be implemented in non-abstract class.
+            </summary>
+            <returns>The <see cref="T:Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider"/> to be used.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Testing.CodeRefactoringTest`1.VerifyRefactoringAsync(Microsoft.CodeAnalysis.Testing.SolutionState,Microsoft.CodeAnalysis.Testing.SolutionState,Microsoft.CodeAnalysis.Testing.DiagnosticResult,Microsoft.CodeAnalysis.Testing.IVerifier,System.Threading.CancellationToken)">
+            <summary>
+            Called to test a C# code refactoring when applied on the input source as a string.
+            </summary>
+            <param name="testState">The effective input test state.</param>
+            <param name="fixedState">The effective test state after the refactoring is applied.</param>
+            <param name="triggerSpan">A <see cref="T:Microsoft.CodeAnalysis.Testing.DiagnosticResult"/> indicating the location where the refactoring will be triggered.</param>
+            <param name="verifier">The verifier to use for test assertions.</param>
+            <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken"/> that the task will observe.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Testing.CodeRefactoringTest`1.GetCompilerDiagnosticsAsync(Microsoft.CodeAnalysis.Project,System.Threading.CancellationToken)">
+            <summary>
+            Get the existing compiler diagnostics on the input document.
+            </summary>
+            <param name="project">The <see cref="T:Microsoft.CodeAnalysis.Project"/> to run the compiler diagnostic analyzers on.</param>
+            <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken"/> that the task will observe.</param>
+            <returns>The compiler diagnostics that were found in the code.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Testing.CodeRefactoringTest`1.GetSourceTextFromDocumentAsync(Microsoft.CodeAnalysis.Document,System.Threading.CancellationToken)">
+            <summary>
+            Given a document, turn it into a string based on the syntax root.
+            </summary>
+            <param name="document">The <see cref="T:Microsoft.CodeAnalysis.Document"/> to be converted to a string.</param>
+            <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken"/> that the task will observe.</param>
+            <returns>A <see cref="T:Microsoft.CodeAnalysis.Text.SourceText"/> containing the syntax of the <see cref="T:Microsoft.CodeAnalysis.Document"/> after formatting.</returns>
+        </member>
+        <member name="T:Microsoft.CodeAnalysis.Testing.CodeRefactoringVerifier`3">
+            <summary>
+            A default verifier for code refactorings.
+            </summary>
+            <typeparam name="TCodeRefactoring">The <see cref="T:Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider"/> to test.</typeparam>
+            <typeparam name="TTest">The test implementation to use.</typeparam>
+            <typeparam name="TVerifier">The type of verifier to use.</typeparam>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Testing.CodeRefactoringVerifier`3.VerifyRefactoringAsync(System.String,System.String)">
+            <summary>
+            Verifies the application of the code refactoring produces the expected result.
+            </summary>
+            <param name="source">The source text to test. Any diagnostics are defined in markup.</param>
+            <param name="fixedSource">The expected fixed source text. Any remaining diagnostics are defined in markup.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Testing.CodeRefactoringVerifier`3.VerifyRefactoringAsync(System.String,Microsoft.CodeAnalysis.Testing.DiagnosticResult,System.String)">
+            <summary>
+            Verifies the application of the code refactoring produces the expected result.
+            </summary>
+            <param name="source">The source text to test, which may include markup syntax.</param>
+            <param name="expected">The expected diagnostic. This diagnostic is in addition to any diagnostics defined in
+            markup.</param>
+            <param name="fixedSource">The expected fixed source text. Any remaining diagnostics are defined in markup.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Testing.CodeRefactoringVerifier`3.VerifyRefactoringAsync(System.String,Microsoft.CodeAnalysis.Testing.DiagnosticResult[],System.String)">
+            <summary>
+            Verifies the application of the code refactoring produces the expected result.
+            </summary>
+            <param name="source">The source text to test, which may include markup syntax.</param>
+            <param name="expected">The expected diagnostics. These diagnostics are in addition to any diagnostics
+            defined in markup.</param>
+            <param name="fixedSource">The expected fixed source text. Any remaining diagnostics are defined in markup.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="T:Microsoft.CodeAnalysis.Testing.EmptyCodeRefactoringProvider">
+            <summary>
+            Defines a <see cref="T:Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider"/> which does not register code refactorings for any source spans.
+            </summary>
+        </member>
+    </members>
+</doc>
