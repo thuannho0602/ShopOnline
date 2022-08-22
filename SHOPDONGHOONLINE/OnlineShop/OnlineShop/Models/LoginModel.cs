@@ -13,3 +13,10 @@ namespace OnlineShop.Models
         public string RememberMe { set; get; }
     }
 }
+
+namespace OnlineShop
+{
+    class ReducerAttribute : Attribute
+    {
+    }
+}

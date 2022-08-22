@@ -70,3 +70,8 @@ D:\ASp_Net\ShopOnline\SHOPDONGHOONLINE\OnlineShop\OnlineShop\obj\Debug\OnlineSho
 D:\ASp_Net\ShopOnline\SHOPDONGHOONLINE\OnlineShop\OnlineShop\obj\Debug\OnlineShop.csproj.CopyComplete
 D:\ASp_Net\ShopOnline\SHOPDONGHOONLINE\OnlineShop\OnlineShop\obj\Debug\OnlineShop.dll
 D:\ASp_Net\ShopOnline\SHOPDONGHOONLINE\OnlineShop\OnlineShop\obj\Debug\OnlineShop.pdb
+D:\ASp_Net\ShopOnline\SHOPDONGHOONLINE\OnlineShop\OnlineShop\bin\Models.dll
+D:\ASp_Net\ShopOnline\SHOPDONGHOONLINE\OnlineShop\OnlineShop\bin\EntityFramework.dll
+D:\ASp_Net\ShopOnline\SHOPDONGHOONLINE\OnlineShop\OnlineShop\bin\Models.pdb
+D:\ASp_Net\ShopOnline\SHOPDONGHOONLINE\OnlineShop\OnlineShop\bin\Models.dll.config
+D:\ASp_Net\ShopOnline\SHOPDONGHOONLINE\OnlineShop\OnlineShop\bin\EntityFramework.xml

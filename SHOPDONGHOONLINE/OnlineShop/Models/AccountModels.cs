@@ -20,8 +20,8 @@ namespace Models
             object[] sqlParams=
             {
                 new SqlParameter(" @UserName",userNam),
-                new SqlParameter("@Password",password);
-            ;
+                new SqlParameter("@Password",password)
+            };
             var res = context.Database.SqlQuery<bool>("sp_Account_Login @UserName,@Password", sqlParams).SingleOrDefault();
             return res;
         }
